@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add yeoman-generator -S
+
+PATH: 
+  /Users/wukangjun/.npm-global/bin:/Users/wukangjun/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wukangjun/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/apache-maven-3.6.1/bin:/Users/wukangjun/.android-sdk-macosx/tools:/Users/wukangjun/.android-sdk-macosx/platform-tools:/Users/wukangjun/gradle-5.4.1/bin:/Users/wukangjun/ngrok/:/usr/local/mysql/bin:/usr/local/mongodb/bin:/usr/local/apache-maven-3.6.1/bin:/Users/wukangjun/.android-sdk-macosx/tools:/Users/wukangjun/.android-sdk-macosx/platform-tools:/Users/wukangjun/gradle-5.4.1/bin:/Users/wukangjun/ngrok/:/usr/local/mysql/bin:/usr/local/mongodb/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://172.18.13.173:4873/@types%2fnode/-/node-14.6.0.tgz: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:66128:16)
+      at Request.emit (events.js:189:13)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:130418:10)
+      at ClientRequest.emit (events.js:194:15)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:556:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+      at Socket.socketOnData (_http_client.js:442:20)
+      at Socket.emit (events.js:189:13)
+
+npm manifest: 
+  {
+    "name": "generator-wu-day01",
+    "version": "1.0.0",
+    "description": "Yeoman是现代化前端项目的脚手架工具，用于生成包含指定框架结构的工程化目录结构",
+    "main": "generators/app.index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "yeoman-generator"
+    ],
+    "author": "wukangjun",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

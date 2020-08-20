@@ -1,0 +1,17 @@
+{
+  "name": "generator-wu-day01",
+  "version": "1.0.0",
+  "description": "Yeoman是现代化前端项目的脚手架工具，用于生成包含指定框架结构的工程化目录结构",
+  "main": "generators/app.index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "wukangjun",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^4.11.0"
+  }
+}
