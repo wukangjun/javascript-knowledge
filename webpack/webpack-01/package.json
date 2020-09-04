@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "webpack": "^4.44.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "node ./scripts/bundle.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
