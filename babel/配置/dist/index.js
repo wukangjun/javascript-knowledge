@@ -1,12 +1,13 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault");
 
-var hello = function hello() {};
+var _map = _interopRequireDefault(require("@babel/runtime-corejs3/core-js/map"));
 
-var p = new Promise();
-var m = new Map();
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime-corejs3/helpers/classCallCheck"));
 
 var A = function A() {
-  _classCallCheck(this, A);
+  (0, _classCallCheck2["default"])(this, A);
 };
+
+var a = new _map["default"]();

@@ -1,11 +1,16 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
+var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault");
+
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js/object/define-property");
+
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
+
 exports.Canvas = exports.mulit = void 0;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime-corejs3/helpers/classCallCheck"));
 
 var mulit = function mulit(a) {
   return function (b) {
@@ -16,8 +21,7 @@ var mulit = function mulit(a) {
 exports.mulit = mulit;
 
 var Canvas = function Canvas() {
-  _classCallCheck(this, Canvas);
-
+  (0, _classCallCheck2["default"])(this, Canvas);
   this.name = 'hello world';
 };
 
