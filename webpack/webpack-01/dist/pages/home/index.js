@@ -81,33 +81,28 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/calc.js":
-/*!*********************!*\
-  !*** ./src/calc.js ***!
-  \*********************/
-/*! exports provided: plus, divide */
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"plus\", function() { return plus; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"divide\", function() { return divide; });\n\nfunction plus(a, b) {\n  return a + b;\n}\n\nfunction divide(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./src/calc.js?");
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 
-/***/ }),
+/* harmony default export */ __webpack_exports__["default"] = ({
+  setup() {
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  }
+});
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n\n\nObject(_calc__WEBPACK_IMPORTED_MODULE_0__[\"plus\"])(1, 2);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
-
-/******/ });
+/******/ ]);
