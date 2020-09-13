@@ -81,33 +81,50 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/calc.js":
-/*!*********************!*\
-  !*** ./src/calc.js ***!
-  \*********************/
-/*! exports provided: plus, divide */
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"plus\", function() { return plus; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"divide\", function() { return divide; });\n\nfunction plus(a, b) {\n  return a + b;\n}\n\nfunction divide(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./src/calc.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_vue_vue_type_template___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _index_vue_vue_type_template___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_vue_vue_type_template___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_vue_vue_type_script___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* empty/unused harmony star reexport */
+  
+  
+
+  
+  
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
+throw new Error("Module parse failed: Unexpected token (2:0)\nFile was processed with these loaders:\n * ./markdown-loader.js\nYou may need an additional loader to handle the result of these loaders.\n| \n> <div class=\"container\">\n|   hello world\n| </div>");
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n\n\nObject(_calc__WEBPACK_IMPORTED_MODULE_0__[\"plus\"])(1, 2);\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  setup() {
+
+  }
+});
+
 
 /***/ })
-
-/******/ });
+/******/ ]);
