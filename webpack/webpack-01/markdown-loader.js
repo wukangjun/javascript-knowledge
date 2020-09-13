@@ -30,6 +30,7 @@ module.exports = function (source) {
     // loaderPath?sourcePath  (加载器路径?协议的目标路径)
     request,
     sourceMap,
+    emitFile,
     // 项目的根路径
     rootContext,
     // 目标路径
@@ -91,8 +92,8 @@ module.exports = function (source) {
   let code = `
   ${templateImport}
   ${scriptImport}
-  ${stylesCode}
   `
+  //emitFile(templateName, descriptor.template.content)
 
   return code;
 }

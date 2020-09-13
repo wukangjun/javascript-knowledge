@@ -1,3 +1,8 @@
+/*
+ * @Author: wukangjun
+ * @Date: 2020-09-13 21:43:10
+ * @Description: write something
+ */
 
 module.exports = function selectBlock(
     descriptor,

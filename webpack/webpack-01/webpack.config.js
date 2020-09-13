@@ -1,5 +1,11 @@
+/*
+ * @Author: wukangjun
+ * @Date: 2020-09-13 21:43:10
+ * @Description: write something
+ */
 const glob = require('glob')
 const path = require('path')
+const { VueLoaderPlugin } = require('vue-loader') 
 
 
 const targets = glob.sync('./src/**/*.vue')
@@ -17,33 +23,45 @@ targets.forEach(target => {
 
 module.exports = {
   mode: 'none',
-  entry: entry,
+  entry: './src/pages/home/index.vue',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js'
   },
   module: {
     rules: [
+      // {
+      //   test: /\.vue$/,
+      //   use: {
+      //     loader: './markdown-loader.js',
+      //     options: {
+      //       appendExtension: true
+      //     }
+      //   }
+      // },
+      // {
+      //   test: /\.html$/,
+      //   use: 'html-loader'
+      // }
+      {
+        test: /\.css|less|scss$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
       {
         test: /\.vue$/,
         use: {
-          loader: './markdown-loader.js',
+          loader: 'vue-loader',
           options: {
             appendExtension: true
           }
         }
       }
-      // {
-      //   test: /\.css|less|scss$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader'
-      //   ]
-      // },
-      // {
-      //   test: /\.vue$/,
-      //   use: 'vue-loader'
-      // }
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 }
