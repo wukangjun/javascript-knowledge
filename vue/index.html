@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div>姓名：{{name}}</div>
+    <div>身高: {{height}}</div>
+    <h2>v-text</h2>
+    <div v-text="name"></div>
+    <h2>v-model</h2>
+    <input v-model="name" placeholder="姓名"/> <br/>
+    <input v-model="height" placeholder="身高"/>
+  </div>
+</body>
+</html>

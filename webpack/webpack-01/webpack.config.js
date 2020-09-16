@@ -5,7 +5,7 @@
  */
 const glob = require('glob')
 const path = require('path')
-const { VueLoaderPlugin } = require('vue-loader') 
+const { VueLoaderPlugin } = require('@auxiliary/wv-loader')
 
 
 const targets = glob.sync('./src/**/*.vue')
@@ -23,13 +23,23 @@ targets.forEach(target => {
 
 module.exports = {
   mode: 'none',
-  entry: './src/pages/home/index.vue',
+  entry,
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js'
   },
   module: {
     rules: [
+      {
+        test: /\.vue$/,
+        use: '@auxiliary/wv-loader'
+      },
+      {
+        test: /\.css|less|scss$/,
+        use: [
+          'css-loader'
+        ]
+      }
       // {
       //   test: /\.vue$/,
       //   use: {
@@ -43,22 +53,22 @@ module.exports = {
       //   test: /\.html$/,
       //   use: 'html-loader'
       // }
-      {
-        test: /\.css|less|scss$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.vue$/,
-        use: {
-          loader: 'vue-loader',
-          options: {
-            appendExtension: true
-          }
-        }
-      }
+      // {
+      //   test: /\.css|less|scss$/,
+      //   use: [
+      //     'style-loader',
+      //     'css-loader'
+      //   ]
+      // },
+      // {
+      //   test: /\.vue$/,
+      //   use: {
+      //     loader: 'vue-loader',
+      //     options: {
+      //       appendExtension: true
+      //     }
+      //   }
+      // }
     ]
   },
   plugins: [
