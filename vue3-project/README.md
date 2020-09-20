@@ -1,4 +1,4 @@
-# vue03-cli
+# vue3-project
 
 ## Project setup
 ```
